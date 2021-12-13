@@ -1,0 +1,44 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bill Splitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/media-queries.css" />
+    <script src="./js/script.js"></script>
+ 
+
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="total-cost"></h1>
+        <p>Per Person</p>
+    </div>
+
+    <div class="bill-container">
+
+        <label for="bill">Enter Bill Total: </label>
+        <input type="number" id="bill-total" name="bill">
+    
+    </div>
+    
+    <div class="slipt-container">
+            <label>Split Between: <br> <button id="plus-btn" onclick="plus()">+</button>
+                <span id="total-people">6</span> People
+                <button id="minus-btn" onclick="minus()">-</button>
+        </label>
+    </div>
+
+    <div class="submit button">
+        <button  class="button-style" id="submit-btn" onclick="submit()">Submit</button>
+    </div>
+
+    <div class="clear button">
+        <button class="button-style" id="clear-btn" onclick="clearButton()">Clear</button>
+    </div>
+
+</body>
+</html>
